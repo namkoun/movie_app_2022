@@ -12,7 +12,7 @@
     grid-template-columns: minmax(150px, 1fr) 2fr;
     grid-gap: 20px;
     text-decoration: none;
-    color: white;
+   /* color: white;*/
 }
 .movie img{
     position: relative;
@@ -44,4 +44,11 @@
 .movie .movie__year{
     margin-right: 10px;
     font-size: 14px;
+}
+.movie__genre, movie__summary{
+    color: #2c2c2c;
+    font-size: 15px;
+}
+.movie:hover{
+    transform:scale(1.1);
 }
