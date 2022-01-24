@@ -26,7 +26,9 @@
 .loginbox{
     position: absolute;
     top: 0;
-    margin-top: 5px;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 30px;
 }
 .asd{
     width: 300px;

@@ -17,14 +17,18 @@ class Detail extends React.Component{
 
         if (location.state){
             return(
-                <Link to={{pathname:'/'}}>
+               <div >
+
                     <div className="about__container">
-                        <span>{location.state.title}({location.state.year})</span>
+                        <div className="about__back">
+                            <Link to={{pathname:'/'}}>뒤로가기</Link>
+                        </div>
+                        <span className="title">{location.state.title}({location.state.year})</span>
                         <img src={location.state.poster} />
                         <span>{location.state.summary}</span>
-
                     </div>
-                </Link>
+               </div>
+               
             )
         }else {
             return null;

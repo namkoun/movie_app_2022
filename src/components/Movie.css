@@ -52,3 +52,6 @@
 .movie:hover{
     transform:scale(1.1);
 }
+.movie a{
+    color: #2c2c2c;
+}

@@ -9,8 +9,8 @@ function Movie({ title, year, summary, poster, genres, uploader}){
             <Link to={{pathname:'/movie-detail',state:{year, title, summary,poster, genres,uploader},}}>
                 <img src={poster} alt={title} title={title} />
                  <div className="movie__data">
-                     <h3 className="movie__title">제목 :{title}({year})</h3>
-                     <h5 className="movie__year">제작년도: {uploader.substring(0,10)}</h5>
+                     <h3 className="movie__title">{title}({year})</h3>
+                     <h5 className="movie__year"> {uploader.substring(0,10)}</h5>
                      <ul className="movie__genres">
                          {genres.map((genre, index) =>{
                              return(

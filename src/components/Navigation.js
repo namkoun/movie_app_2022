@@ -20,6 +20,7 @@ import $ from "jquery";
                     <div className="nav">
                         <Link to="/">Home</Link>
                         <Link to="/about">About</Link>
+                        <Link className="join-btn">회원가입</Link>
                     </div>
 
                     <div className="loginbox">
@@ -27,7 +28,6 @@ import $ from "jquery";
                             <input type="text" className="asd"/>
                             <input type="text" className="asd"/>
                             <button className="login-btn">로그인</button>
-                            <button className="join-btn">회원가입</button>
                         </div>
                     </div>
 
