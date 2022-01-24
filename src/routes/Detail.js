@@ -1,6 +1,8 @@
 import React from "react";
 import "./About.css"
 import {Link} from "react-router-dom";
+import Disqus from "disqus-react";
+
 
 class Detail extends React.Component{
     componentDidMount() {
@@ -11,6 +13,13 @@ class Detail extends React.Component{
     }
 
     render() {
+        const disqusShortname = "http-localhost-3000-movie-detail"
+        const disqusConfig = {
+            url: "http://localhost:3000",
+            identifier: "article-id",
+            title: "Title of Your Article"
+        }
+
         const {location} = this.props
 
         console.log(this.props)
@@ -27,6 +36,10 @@ class Detail extends React.Component{
                         <img src={location.state.poster} />
                         <span>{location.state.summary}</span>
                     </div>
+                   <Disqus.DiscussionEmbed
+                       shortname={disqusShortname}
+                       config={disqusConfig}
+                   />
                </div>
                
             )
