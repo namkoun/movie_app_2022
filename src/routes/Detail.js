@@ -13,14 +13,13 @@ class Detail extends React.Component{
     }
 
     render() {
+        const {location} = this.props
         const disqusShortname = "http-localhost-3000-movie-detail"
         const disqusConfig = {
             url: "http://localhost:3000",
-            identifier: "article-id",
-            title: "Title of Your Article"
+            identifier: location.state.title,
+            title: location.state.title
         }
-
-        const {location} = this.props
 
         console.log(this.props)
 

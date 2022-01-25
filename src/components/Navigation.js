@@ -20,7 +20,7 @@ import $ from "jquery";
                     <div className="nav">
                         <Link to="/">Home</Link>
                         <Link to="/about">About</Link>
-                        <Link className="join-btn">회원가입</Link>
+                        <Link to="/join" className="join-btn">회원가입</Link>
                     </div>
 
                     <div className="loginbox">
