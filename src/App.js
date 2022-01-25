@@ -6,6 +6,7 @@ import Home from "./routes/Home";
 import Navigation from "./components/Navigation";
 import Detail from "./routes/Detail";
 import Join from "./routes/Join";
+import year from "./routes/year";
 
 function App(){
     return (
@@ -16,6 +17,7 @@ function App(){
             <Route path="/about" component={About} />
             <Route path="/movie-detail" component={Detail} />
             <Route path="/join" component={Join} />
+            <Route path="/year" component={year} />
         </HashRouter>
     );
 }

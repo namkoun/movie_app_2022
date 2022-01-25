@@ -1,0 +1,29 @@
+.frame{
+    display: none;
+}
+.contens{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.main{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+}
+.inputbox{
+    margin: 5px 0 30px;
+}
+.input{
+    height: 30px;
+    border: 1px solid #adaeb9 ;
+}
+.onc{
+    height: 30px;
+    margin-left: 3px;
+    border: 1px solid #adaeb9 ;
+    color: white;
+    background-color: #adaeb9;
+}

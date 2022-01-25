@@ -21,6 +21,7 @@ import $ from "jquery";
                         <Link to="/">Home</Link>
                         <Link to="/about">About</Link>
                         <Link to="/join" className="join-btn">회원가입</Link>
+                        <Link to="/year">Year</Link>
                     </div>
 
                     <div className="loginbox">
